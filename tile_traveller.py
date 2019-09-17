@@ -7,6 +7,7 @@ position_x =0
 def limit_check_x(input_x, input_y):
     max_left = 5
     max_right = 7
+    
     if input_x < max_left:
         input_x = max_left
     elif input_x > max_right:
@@ -17,7 +18,14 @@ def limit_check_x(input_x, input_y):
         input_y = max_down
     elif input_y > max_up:
         input_y = max_up
-    return input_y
+    return input_x, input_y
+
+def wall_check(input_x, input_y):
+    firstwall_x= 5
+    secondwall_x = 6
+    thirdwall_x = 7
+    firstwall_y = 2
+
     
     
 
