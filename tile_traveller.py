@@ -23,11 +23,13 @@ def limit_check_y(input):
         input = max_up
     return input
     
+# check if in victory position
 def victory_check(input_x, input_y):
     max_x= 7
     max_y= 3
     if input_x == max_x and input_y == max_y:
         print('Voctory!')       
+
 
 def direction(pos_x, pos_y, direction):
     if direction.lower == "w":
@@ -39,5 +41,11 @@ def direction(pos_x, pos_y, direction):
     elif direction.lower == "":
         pos_y -= 1
     else:
-        print("Invalid input! ")
+        print("Not a valid direction!")
     return pos_x, pos_y
+
+#op= original position
+op_x = 5
+op_y = 1
+
+direction= input("You can travel: ")
