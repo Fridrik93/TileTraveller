@@ -13,8 +13,8 @@ def limit_check_x(input_x, input_y):
         input_x = max_left
     elif input_x > max_right:
         input_x = max_right
-    max_up= 3
-    max_down = 1
+    max_up= 1
+    max_down = 3
     if input_y < max_down:
         input_y = max_down
     elif input_y > max_up:
@@ -22,12 +22,14 @@ def limit_check_x(input_x, input_y):
     return input_x, input_y
 
    
-# check if in victory position
-#  def victory_check(input_x, input_y):
-#      max_x= 3
-#      max_y= 3
-#      if input_x == max_x and input_y == max_y:
-#         print('Voctory!')       
+# # check if in victory position
+#   def victory_check(input_x, input_y):
+#     max_x= 3
+#     max_y= 3
+#     if input_x == max_x and input_y == max_y:
+#         print('Victory!')   
+#         break
+#     return input_x, input_y
 
 def direction(pos_x, pos_y, direction):
     if direction.lower() == "w":
@@ -68,9 +70,7 @@ dire = input("You can travel: ")
 new_x, new_y = direction(op_x, op_y, dire)
 
 x, y = limit_check_x(new_x, new_y)
-
-print(x, y)
-
+print(new_x, new_y)
 while True:
     dire = input("You can travel: ")
     new_x, new_y = direction(new_x, new_y, dire)
