@@ -23,6 +23,10 @@ def limit_check_y(input):
         input = max_up
     return input
     
-            
+def victory_check(input_x, input_y):
+    max_x= 7
+    max_y= 3
+    if input_x == max_x and input_y == max_y:
+        print('Voctory!')       
 
-        
+
