@@ -73,6 +73,6 @@ print(x, y)
 
 while True:
     dire = input("You can travel: ")
-    new_x, new_y = direction(op_x, op_y, dire)
+    new_x, new_y = direction(new_x, new_y, dire)
     x, y = limit_check_x(new_x, new_y)
     print(x, y)
