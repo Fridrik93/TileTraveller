@@ -4,25 +4,26 @@
 
 #check ef x skipun er innan marka
 position_x =0
-def limit_check_x(input):
+def limit_check_x(input_x, input_y):
     max_left = 5
     max_right = 7
-    if input < max_left:
-        input = max_left
-    elif input > max_right:
-        input = max_right
-    return input 
+    if input_x < max_left:
+        input_x = max_left
+    elif input_x > max_right:
+        input_x = max_right
+    max_up= 3
+    max_down = 1
+    if input_y < max_down:
+        input_y = max_down
+    elif input_y > max_up:
+        input_y = max_up
+    return input_y
+    
+    
 
 # check ef y skipun er innan marka
 def limit_check_y(input):
-    max_up= 3
-    max_down = 1
-    if input < max_down:
-        input = max_down
-    elif input > max_up:
-        input = max_up
-    return input
-    
+   
 # check if in victory position
 def victory_check(input_x, input_y):
     max_x= 7
